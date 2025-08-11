@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const projects = document.getElementsByClassName('project-card');
     
     Array.from(projects).forEach((card, index) => {
-        if (index % 2 == 1 && window.innerWidth > 1000) {
-            card.style.flexDirection = 'row-reverse'
+        if (index % 2 == 1) {
+            if (window.innerWidth > 1000) card.style.flexDirection = 'row-reverse';
             card.classList.add('from-left');
         } else {
             card.classList.add('from-right');
