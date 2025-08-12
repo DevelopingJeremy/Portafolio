@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Place images on the left or right depending on the child element
     const projects = document.getElementsByClassName('project-card');
-    
+
     Array.from(projects).forEach((card, index) => {
         if (index % 2 == 1) {
             if (window.innerWidth > 1000) card.style.flexDirection = 'row-reverse';
@@ -53,4 +53,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     projectCards.forEach(card => observer.observe(card));
+
+    const text = document.getElementById('email').textContent;
+    const boton = document.getElementById('button-copy');
+
+    boton.addEventListener('click', () => {
+        navigator.clipboard.writeText(text)
+            .then(() => {
+                const alert = document.getElementById('alert');
+                alert.classList.toggle('alert-email-show')
+                alert.classList.toggle('alert-email-hidden')
+                setTimeout(() => {
+                    alert.classList.toggle('alert-email-show')
+                    alert.classList.toggle('alert-email-hidden')
+                }, 2000);
+            }).catch(err => {
+                console.error(err);
+            })
+    })
+
 });

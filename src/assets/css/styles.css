@@ -178,20 +178,23 @@ nav>div>ul>li>a {
 
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     gap: 55px;
 }
 
 .index::before {
     content: "";
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: #05081696;
     pointer-events: none;
     z-index: 1;
 }
 
-.index > * {
+.index>* {
     position: relative;
     z-index: 2;
 }
@@ -202,7 +205,7 @@ nav>div>ul>li>a {
     height: 210px;
 }
 
-.index > article {
+.index>article {
     color: white;
     max-width: 450px;
     display: flex;
@@ -210,21 +213,21 @@ nav>div>ul>li>a {
     gap: 20px;
 }
 
-.index > article h1 {
+.index>article h1 {
     color: var(--color-secondary);
     font-family: archivo-black;
     font-size: 35px;
 }
 
-.index > article h4 {
+.index>article h4 {
     color: var(--color-text-primary);
 }
 
-.index > article p {
+.index>article p {
     color: var(--color-text-secondary);
 }
 
-.index > article p span {
+.index>article p span {
     color: var(--color-green-extra);
 }
 
@@ -355,6 +358,25 @@ nav>div>ul>li>a {
     gap: 70px;
 }
 
+.project-card {
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.project-card.from-left {
+    transform: translateX(-100px);
+}
+
+.project-card.from-right {
+    transform: translateX(100px);
+}
+
+.project-card.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 /* Two images, one above the other */
 .double-img {
     position: relative;
@@ -386,11 +408,11 @@ nav>div>ul>li>a {
     color: #8898FF;
 }
 
-.project-header > h3 {
+.project-header>h3 {
     margin: 5px 0 0 0;
 }
 
-.project-header > p {
+.project-header>p {
     color: var(--color-text-secondary);
     margin: 20px 0;
 }
@@ -442,26 +464,123 @@ nav>div>ul>li>a {
     }
 
     .double-img img:nth-child(2) {
+        display: none;
+    }
+}
+
+
+/* Technologies */
+
+.technologies {
+    background-color: var(--color-background);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+    padding-bottom: 100px;
+}
+
+.technologies>p {
+    color: white;
+}
+
+.stacks-full {
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 70%;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 320px;
+    background: linear-gradient(to right, #0D1121, #171D35);
+    color: white;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.stack>h1 {
+    font-size: 1.6pc;
+    font-family: archivo;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px;
+}
+
+.icons>img {
+    height: 56px;
+}
+
+
+/* Contact */
+
+.contact {
+    background-color: var(--color-background);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+    padding-bottom: 170px;
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: white;
+}
+
+
+/* Alerts */
+
+.alert-email {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #2ecc71;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.alert-email-hidden {
     display: none;
 }
+
+.alert-email-show {
+    display: block;
 }
 
-
-.project-card {
-    opacity: 0;
-    transform: translateX(0); /* Por defecto, sin desplazamiento */
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.project-card.from-left {
-    transform: translateX(-100px); /* Inicial: a la izquierda */
-}
-
-.project-card.from-right {
-    transform: translateX(100px); /* Inicial: a la derecha */
-}
-
-.project-card.visible {
-    opacity: 1;
-    transform: translateX(0); /* Final: en posición */
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 480px) {
+    .alert-email {
+        top: 10px;
+        right: 50%;
+        transform: translateX(50%);
+        font-size: 14px;
+        padding: 10px 16px;
+    }
 }
