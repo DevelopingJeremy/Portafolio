@@ -356,6 +356,12 @@ nav>div>ul>li>a {
     padding-bottom: 170px;
 }
 
+@media (max-width: 840px) {
+    .projects {
+        padding-top: 0px;
+    }
+}
+
 .project-card {
     display: flex;
     flex-direction: row;
@@ -492,6 +498,12 @@ nav>div>ul>li>a {
 
 .technologies>p {
     color: white;
+}
+
+@media (max-width: 840px) {
+    .technologies>p {
+        margin: 0 50px;
+    }
 }
 
 .stacks-full {
