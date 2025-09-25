@@ -444,11 +444,19 @@ nav>div>ul>li>a {
     align-items: center;
     justify-content: space-between;
 
-    margin-bottom: 20px;
 }
 
 .github-project i:first-child {
     font-size: 20px;
+}
+
+.links-tech {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: auto;
+    margin-bottom: 20px;
 }
 
 .icons-project {
