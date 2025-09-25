@@ -1,6 +1,5 @@
 /* HECHO POR JEREMY QUESADA GARRO */
 
-
 /* Variables */
 :root {
     --color-background: #050816;
@@ -347,7 +346,6 @@ nav>div>ul>li>a {
 
 .projects {
     background-color: var(--color-background);
-    padding-top: 70px;
 
     display: flex;
     flex-direction: column;
