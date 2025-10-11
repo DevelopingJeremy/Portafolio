@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         closer.classList.toggle('closer-close');
     });
 
-    closer.addEventListener('click', () => {
+    closer.addEventListener('mousedown', () => {
         mobileMenu.classList.toggle('header-open');
         mobileMenu.classList.toggle('header-close');
         closer.classList.toggle('closer-close');
@@ -71,5 +71,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.error(err);
             })
     })
+
+    // Selector de idioma
+    const langButton = document.getElementById('lang-button');
+    const langList = document.getElementById('lang-list');
+
+    langButton.addEventListener('click', () => {
+        langList.classList.toggle('lang-list-open');
+        langList.classList.toggle('lang-list-close');
+    });
+
+    // Cambiar idioma al seleccionar
+    Array.from(langList.children).forEach(item => {
+        item.addEventListener('click', () => {
+            const selectedLang = item.getAttribute('data-lang');
+            langButton.textContent = selectedLang.toUpperCase() + " ▼";
+            langList.classList.remove('lang-list-open');
+            langList.classList.add('lang-list-close');
+
+            window.location.href = `/` + selectedLang + "/";
+        });
+    });
+
+    // Cerrar lista si se hace clic fuera
+    document.addEventListener('click', (e) => {
+        if (!langButton.contains(e.target) && !langList.contains(e.target)) {
+            langList.classList.remove('lang-list-open');
+            langList.classList.add('lang-list-close');
+        }
+    });
 
 });

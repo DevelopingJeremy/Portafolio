@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy Quesada | Portafolio</title>
+    <link rel="icon" type="image/x-icon" href="../public/img/icons/favicon.ico">
+    <link rel="stylesheet" href="../src/assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/03f5a87914.js" crossorigin="anonymous"></script>
+
+    <!-- SEO Meta -->
+    <meta name="description"
+        content="Portafolio profesional de Jeremy Quesada – Desarrollador Full Stack en Costa Rica. Explora mis proyectos, tecnologías y habilidades en desarrollo web.">
+    <meta name="keywords"
+        content="Jeremy Quesada, Desarrollador Full Stack, Portafolio, Costa Rica, React, PHP, JavaScript, Node.js, MySQL, Desarrollo web">
+    <meta name="author" content="Jeremy Quesada Garro">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dev.jeremyqg.com/">
+
+    <!-- Hreflang for multiple languages -->
+    <link rel="alternate" href="https://dev.jeremyqg.com/es/" hreflang="es">
+    <link rel="alternate" href="https://dev.jeremyqg.com/en/" hreflang="en">
+
+    <!-- Open Graph (Social Media Preview) -->
+    <meta property="og:title" content="Jeremy Quesada | Portafolio">
+    <meta property="og:description"
+        content="Portafolio profesional de Jeremy Quesada, Desarrollador Full Stack en Costa Rica. Descubre mis proyectos, tecnologías y experiencia en desarrollo web.">
+    <meta property="og:image" content="https://dev.jeremyqg.com/public/img/logos/Logo Jeremy Quesada TRANSPARENTE.png">
+    <meta property="og:url" content="https://dev.jeremyqg.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jeremy Quesada | Portafolio">
+    <meta name="twitter:description"
+        content="Portafolio profesional de Jeremy Quesada, Desarrollador Full Stack en Costa Rica. Explora mis proyectos y tecnologías.">
+    <meta name="twitter:image" content="https://dev.jeremyqg.com/public/img/logos/Logo Jeremy Quesada TRANSPARENTE.png">
+</head>
+
+<body>
+    <div id='alert' class="alert-email alert-email-hidden">Correo copiado con éxito</div>
+    <header id="header-responsive">
+        <h1 class="title-header">@DevelopingJeremy</h1>
+        <div class="header-right">
+            <div class="links">
+                <a href="https://www.linkedin.com/in/jeremy-andrey-quesada-garro-6a5710310" target="_blank">
+                    <i class="fa-brands fa-linkedin" style="color: #8f28ff;"></i>
+                </a>
+                <a href="https://github.com/DevelopingJeremy" target="_blank">
+                    <i class="fa-brands fa-github" style="color: #8f28ff;"></i>
+                </a>
+            </div>
+
+            <nav>
+                <i id="nav-responsive" class="fa-solid fa-bars" style="color: #8f28ff; cursor: pointer;"></i>
+                <div>
+                    <ul class="redirection-nav">
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#technologies">Tecnologías</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Selector de idioma -->
+            <div class="language-selector">
+                <button id="lang-button">ES ▼</button>
+                <ul id="lang-list" class="lang-list-close">
+                    <li data-lang="es">Español</li>
+                    <li data-lang="en">English</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú responsive -->
+    <div id="mobile-menu" class="header-close">
+        <ul>
+            <li><a href="#projects" class="redirect">Proyectos</a></li>
+            <li><a href="#technologies" class="redirect">Tecnologías</a></li>
+            <li><a href="#contact" class="redirect">Contacto</a></li>
+        </ul>
+    </div>
+
+    <main>
+
+        <!-- Inicio -->
+        <section class="index">
+            <img src="../public/img/Jeremy-en-microsoft.jpg" alt="Imagen de Jeremy en Microsoft">
+            <div class="figura-index">
+                <figure class="bola-index"></figure>
+                <figure class="line-index"></figure>
+            </div>
+
+            <article>
+                <h4>Hola, mi nombre es</h4>
+                <h1>JEREMY QUESADA.</h1>
+                <p>Apasionado <span>Desarrollador Full Stack</span> enfocado en construir soluciones tecnológicas
+                    inteligentes y eficientes.
+                    He participado en proyectos privados con instituciones y empresas, siempre buscando crear
+                    herramientas rápidas, funcionales y bien elaboradas.</p>
+
+                <div class="buttons-index">
+                    <button class="button-cv"
+                        onclick="window.open('../public/docs/CV Es Desarrollo Web Jeremy Quesada Garro.pdf', '_blank')">Ver
+                        CV</button>
+                    <button onclick="(window.location.href = '#contact')" class="button-contact">&lt;Contacto
+                        /&gt;</button>
+                </div>
+            </article>
+        </section>
+
+        <!-- Proyectos -->
+        <section class="projects">
+            <a name="projects"></a>
+            <div class="section-title">
+                <h1>Mis Proyectos</h1>
+                <div class="line"></div>
+            </div>
+
+            <!-- Proyecto 1 -->
+            <article class="project-card">
+                <div class="double-img">
+                    <img src="../public/img/projects/Dusa.png" alt="Sistema de programación de citas para empresas"
+                        title="Sistema de citas">
+                </div>
+                <div class="project-info">
+                    <header class="project-header">
+                        <span class="type">Fullstack</span>
+                        <h3>Sistema de Programación de Citas</h3>
+                        <p>Plataforma en línea intuitiva que facilita la gestión de citas presenciales o virtuales.
+                            Incluye calendario interactivo, notificaciones automáticas por correo y una interfaz limpia
+                            y responsive para uso en dispositivos móviles y escritorio.</p>
+                    </header>
+                    <div class="links-tech">
+                        <a class="github-project"><i class="fa-brands fa-github"></i><span>Privado</span></a>
+                    </div>
+                    <footer class="icons-project">
+                        <img src="../public/img/icons/REACT.png" alt="React">
+                        <img src="../public/img/icons/CSS3.png" alt="CSS3">
+                        <img src="../public/img/icons/JAVASCRIPT.png" alt="JavaScript">
+                        <img src="../public/img/icons/MYSQL.png" alt="MySQL">
+                        <img src="../public/img/icons/PHP.webp" alt="PHP">
+                        <img src="../public/img/icons/docker.png" alt="Docker">
+                    </footer>
+                </div>
+            </article>
+
+            <!-- Proyecto 2 -->
+            <article class="project-card">
+                <div class="double-img">
+                    <img src="../public/img/projects/inventory-system-white.png" alt="Sistema de Inventarios blanco"
+                        title="Sistema de Inventarios">
+                    <img src="../public/img/projects/inventory-system-dark.png" alt="Sistema de Inventarios oscuro"
+                        title="Sistema de Inventarios">
+                </div>
+                <div class="project-info">
+                    <header class="project-header">
+                        <span class="type">Fullstack</span>
+                        <h3>Gestión de Inventarios</h3>
+                        <p>ERP ligero y potente para pequeñas empresas, permitiendo manejar inventarios, ventas,
+                            clientes y proveedores desde una sola plataforma. Incluye seguimiento de stock,
+                            reportes de ventas, gestión de proveedores y base de datos de clientes con interfaz
+                            amigable y responsive.</p>
+                    </header>
+                    <div class="links-tech">
+                        <a href="https://github.com/DevelopingJeremy/Sistema-de-inventarios" class="github-project"
+                            target="_blank"><i class="fa-brands fa-github"></i><span>Github</span></a>
+                    </div>
+                    <footer class="icons-project">
+                        <img src="../public/img/icons/HTML5.png" alt="HTML5">
+                        <img src="../public/img/icons/CSS3.png" alt="CSS3">
+                        <img src="../public/img/icons/JAVASCRIPT.png" alt="JavaScript">
+                        <img src="../public/img/icons/MYSQL.png" alt="MySQL">
+                        <img src="../public/img/icons/PHP.webp" alt="PHP">
+                    </footer>
+                </div>
+            </article>
+
+            <!-- Proyecto 3 -->
+            <article class="project-card">
+                <div class="double-img">
+                    <img src="../public/img/projects/vok-especialidades.png" alt="Página Escolar Dinámica"
+                        title="Página Escolar">
+                    <img src="../public/img/projects/Vok-index.png" alt="Página Escolar Dinámica"
+                        title="Página Escolar">
+                </div>
+                <div class="project-info">
+                    <header class="project-header">
+                        <span class="type">Backend</span>
+                        <h3>Página Escolar Dinámica</h3>
+                        <p>Página institucional moderna y responsive para mostrar anuncios, eventos y programas
+                            académicos. Incluye un CMS para actualizar información, gestionar contenido y mantener
+                            a estudiantes, padres y personal informados en tiempo real.</p>
+                    </header>
+                    <div class="links-tech">
+                        <a class="github-project"><i class="fa-brands fa-github"></i><span>Privado</span></a>
+                    </div>
+                    <footer class="icons-project">
+                        <img src="../public/img/icons/HTML5.png" alt="HTML5">
+                        <img src="../public/img/icons/CSS3.png" alt="CSS3">
+                        <img src="../public/img/icons/JAVASCRIPT.png" alt="JavaScript">
+                        <img src="../public/img/icons/MYSQL.png" alt="MySQL">
+                        <img src="../public/img/icons/PHP.webp" alt="PHP">
+                    </footer>
+                </div>
+            </article>
+
+            <!-- Proyecto 4 -->
+            <article class="project-card">
+                <div class="double-img">
+                    <img src="../public/img/projects/url-shortenner.png" alt="Acortador de URL"
+                        title="Acortador de URL">
+                </div>
+                <div class="project-info">
+                    <header class="project-header">
+                        <span class="type">Fullstack</span>
+                        <h3>Acortador de URL</h3>
+                        <p>Aplicación web que convierte URLs largas en enlaces cortos fáciles de compartir. Incluye
+                            validación de URLs, generación de códigos únicos y seguimiento de clics en tiempo real.</p>
+                    </header>
+                    <div class="links-tech">
+                        <a href="https://github.com/DevelopingJeremy/acortador-url" target="_blank"
+                            class="github-project"><i class="fa-brands fa-github"></i><span>Github</span></a>
+                        <a class="link-project" href="https://jeremyqg.com/acortador/" target="_blank"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                    <footer class="icons-project">
+                        <img src="../public/img/icons/HTML5.png" alt="HTML5">
+                        <img src="../public/img/icons/CSS3.png" alt="CSS3">
+                        <img src="../public/img/icons/JAVASCRIPT.png" alt="JavaScript">
+                        <img src="../public/img/icons/MYSQL.png" alt="MySQL">
+                        <img src="../public/img/icons/PHP.webp" alt="PHP">
+                    </footer>
+                </div>
+            </article>
+        </section>
+
+        <!-- Tecnologías -->
+        <section class="technologies">
+            <a name="technologies"></a>
+            <div class="section-title">
+                <h1>Tecnologías</h1>
+                <div class="line"></div>
+            </div>
+
+            <p class="text-technologies">En mi camino como <span style="color: #00FFAE;">desarrollador web</span>, he
+                <span style="color: #FF9500;">adquirido experiencia</span> y habilidades en diversas tecnologías. <span
+                    style="color: #00BBFF;">Mi stack incluye:</span>
+            </p>
+
+            <div class="stacks-full">
+                <article class="stack">
+                    <h1>Frontend</h1>
+                    <div class="icons">
+                        <img src="../public/img/icons/HTML5.png" alt="HTML5">
+                        <img src="../public/img/icons/CSS3.png" alt="CSS3">
+                        <img src="../public/img/icons/JAVASCRIPT.png" alt="JavaScript">
+                        <img src="../public/img/icons/REACT.png" alt="React">
+                    </div>
+                </article>
+
+                <article class="stack">
+                    <h1>Backend</h1>
+                    <div class="icons">
+                        <img src="../public/img/icons/PHP.webp" alt="PHP">
+                        <img src="../public/img/icons/MYSQL.png" alt="MySQL">
+                    </div>
+                </article>
+
+                <article class="stack">
+                    <h1>Aprendiendo</h1>
+                    <div class="icons">
+                        <img src="../public/img/icons/NODEJS.webp" alt="Node.js">
+                        <img src="../public/img/icons/MONGODB.webp" alt="MongoDB">
+                        <img src="../public/img/icons/FIGMA.png" alt="Figma">
+                    </div>
+                </article>
+
+                <article class="stack">
+                    <h1>Herramientas</h1>
+                    <div class="icons">
+                        <img src="../public/img/icons/GIT.png" alt="Git">
+                        <img src="../public/img/icons/GITHUB-WHITE.png" alt="GitHub">
+                        <img src="../public/img/icons/VSCODE.png" alt="VSCode">
+                        <img src="../public/img/icons/NOTION.png" alt="Notion">
+                        <img src="../public/img/icons/docker.png" alt="Docker">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="contact">
+            <a name="contact"></a>
+            <div class="section-title">
+                <h1>Contáctame</h1>
+                <div class="line"></div>
+            </div>
+
+            <div class="contact-items">
+                <img src="../public/img/logos/Logo Jeremy Quesada TRANSPARENTE.png" alt="Logo de Jeremy Quesada">
+
+                <article class="contact-links">
+                    <span><i class="fa-solid fa-location-dot" style="color: #8f28ff; margin-right: 10px;"></i> Costa
+                        Rica, San José </span>
+
+                    <span id="email">
+                        <i class="fa-solid fa-envelope" style="color: #8f28ff; margin-right: 10px;"></i>
+                        quesadajeremy7@gmail.com
+                        <a href="mailto:quesadajeremy7@gmail.com"><i class="fa-solid fa-paper-plane"
+                                style="color: #8f28ff; margin: 0 10px;"></i></a>
+                        <i class="fa-solid fa-clone" style="color: #8f28ff;cursor: pointer;" id="button-copy"></i>
+                    </span>
+
+                    <span><i class="fa-solid fa-phone" style="color: #8f28ff; margin-right: 10px;"></i>
+                        <a href="tel:+50670473684" style="color: #fff;">+(506) 7047-3684</a>
+                    </span>
+
+                    <div class="links links-contact">
+                        <a href="https://www.linkedin.com/in/jeremy-andrey-quesada-garro-6a5710310" target="_blank">
+                            <i class="fa-brands fa-linkedin" style="color: #8f28ff;"></i>
+                        </a>
+                        <a href="https://github.com/DevelopingJeremy" target="_blank">
+                            <i class="fa-brands fa-github" style="color: #8f28ff;"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="radius-gradient"></div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <h4>Hecho con ❤️ por Jeremy Q. · Desarrollador Full Stack en Costa Rica · Construyamos algo increíble juntos.
+        </h4>
+    </footer>
+
+    <div id="closer" class="closer-close"></div>
+    <script src="../src/assets/js/script.js"></script>
+</body>
+
+</html>
