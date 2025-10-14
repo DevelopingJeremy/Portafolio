@@ -53,7 +53,7 @@ Incluye animaciones, menú responsive, secciones para proyectos, tecnologías y 
 ## Contacto
 
 Jeremy Quesada  
-Email: quesadajeremy7@gmail.com  
+Email: info@jeremyqg.com 
 LinkedIn: https://www.linkedin.com/in/jeremy-andrey-quesada-garro-6a5710310  
 GitHub: https://github.com/DevelopingJeremy
 
