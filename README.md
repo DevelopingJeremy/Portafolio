@@ -44,12 +44,6 @@ Incluye animaciones, menú responsive, secciones para proyectos, tecnologías y 
 
 ---
 
-## Dependencias externas
-
-- [Font Awesome](https://fontawesome.com/) para los iconos (usado via CDN).
-
----
-
 ## Contacto
 
 Jeremy Quesada  
