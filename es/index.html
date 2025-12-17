@@ -140,6 +140,10 @@
                     <div class="links-tech">
                         <a target="_blank" class="github-project"><i
                                 class="fa-brands fa-github"></i><span>Privado</span></a>
+                        <button class="project-more" type="button" data-project-title="VOLCRC Cruz Roja Costarricense"
+                            data-project-type="FullStack"
+                            data-project-description="Aplicación web desarrollada para la Cruz Roja Costarricense, utilizada actualmente a nivel interno por más de 5 000 voluntarios en todo el país. Está diseñada para el registro y control de voluntarios, permitiendo la gestión de información, el control de horas mensuales y la administración eficiente de la participación en las distintas sedes a nivel nacional."
+                            data-project-images="../public/img/projects/VOLCRC.png">Ver más</button>
                     </div>
                     <footer class="icons-project">
                         <img src="../public/img/icons/REACT.png" alt="React">
@@ -165,6 +169,10 @@
                     <div class="links-tech">
                         <a target="_blank" class="github-project"><i
                                 class="fa-brands fa-github"></i><span>Privado</span></a>
+                        <button class="project-more" type="button" data-project-title="Sistema de Pedidos"
+                            data-project-type="FullStack"
+                            data-project-description="Aplicación web para la gestión de pedidos en una plataforma digital, que permite realizar órdenes, generar informes en tiempo real y enviar notificaciones por correo, optimizando el control de miles de pedidos por temporada y reemplazando procesos manuales."
+                            data-project-images="../public/img/projects/pedidos-DUSA.png">Ver más</button>
                     </div>
                     <footer class="icons-project">
                         <img src="../public/img/icons/REACT.png" alt="React">
@@ -195,6 +203,10 @@
                     <div class="links-tech">
                         <a href="https://github.com/DevelopingJeremy/Sistema-de-inventarios" class="github-project"
                             target="_blank"><i class="fa-brands fa-github"></i><span>Github</span></a>
+                        <button class="project-more" type="button" data-project-title="Gestión de Inventarios"
+                            data-project-type="Fullstack"
+                            data-project-description="ERP ligero y potente para pequeñas empresas, permitiendo manejar inventarios, ventas, clientes y proveedores desde una sola plataforma. Incluye seguimiento de stock, reportes de ventas, gestión de proveedores y base de datos de clientes con interfaz amigable y responsive."
+                            data-project-images="../public/img/projects/inventory-system-white.png,../public/img/projects/inventory-system-dark.png">Ver más</button>
                     </div>
                     <footer class="icons-project">
                         <img src="../public/img/icons/HTML5.png" alt="HTML5">
@@ -222,6 +234,10 @@
                     </header>
                     <div class="links-tech">
                         <a class="github-project"><i class="fa-brands fa-github"></i><span>Privado</span></a>
+                        <button class="project-more" type="button"
+                            data-project-title="Sistema de Programación de Citas" data-project-type="Fullstack"
+                            data-project-description="Plataforma en línea intuitiva que facilita la gestión de citas presenciales o virtuales. Incluye calendario interactivo, notificaciones automáticas por correo y una interfaz limpia y responsive para uso en dispositivos móviles y escritorio."
+                            data-project-images="../public/img/projects/Dusa.png">Ver más</button>
                     </div>
                     <footer class="icons-project">
                         <img src="../public/img/icons/REACT.png" alt="React">
@@ -252,6 +268,10 @@
                     </header>
                     <div class="links-tech">
                         <a class="github-project"><i class="fa-brands fa-github"></i><span>Privado</span></a>
+                        <button class="project-more" type="button" data-project-title="Página Escolar Dinámica"
+                            data-project-type="Backend"
+                            data-project-description="Página institucional moderna y responsive para mostrar anuncios, eventos y programas académicos. Incluye un CMS para actualizar información, gestionar contenido y mantener a estudiantes, padres y personal informados en tiempo real."
+                            data-project-images="../public/img/projects/vok-especialidades.png,../public/img/projects/Vok-index.png">Ver más</button>
                     </div>
                     <footer class="icons-project">
                         <img src="../public/img/icons/HTML5.png" alt="HTML5">
@@ -281,6 +301,10 @@
                             class="github-project"><i class="fa-brands fa-github"></i><span>Github</span></a>
                         <a class="link-project" href="https://jeremyqg.com/acortador/" target="_blank"><i
                                 class="fa-solid fa-link"></i></a>
+                        <button class="project-more" type="button" data-project-title="Acortador de URL"
+                            data-project-type="Fullstack"
+                            data-project-description="Aplicación web que convierte URLs largas en enlaces cortos fáciles de compartir. Incluye validación de URLs, generación de códigos únicos y seguimiento de clics en tiempo real."
+                            data-project-images="../public/img/projects/url-shortenner.png,../public/img/projects/url-shortenner.png,../public/img/projects/url-shortenner.png">Ver más</button>
                     </div>
                     <footer class="icons-project">
                         <img src="../public/img/icons/HTML5.png" alt="HTML5">
@@ -390,6 +414,34 @@
         <h4>Hecho con ❤️ por Jeremy Q. · Desarrollador Full Stack en Costa Rica · Construyamos algo increíble juntos.
         </h4>
     </footer>
+
+    <div id="project-modal" class="project-modal" aria-hidden="true">
+        <div class="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+            <div class="project-modal-header">
+                <div class="project-modal-title">
+                    <span id="project-modal-type" class="type"></span>
+                    <h2 id="project-modal-title" class="project-modal-title-text"></h2>
+                </div>
+                <button id="project-modal-close" class="project-modal-close" type="button">×</button>
+            </div>
+            <div class="project-modal-body">
+                <div class="project-modal-gallery">
+                    <div class="project-modal-main">
+                        <img id="project-modal-image" src="" alt="">
+                        <div class="project-modal-nav">
+                            <button id="project-modal-prev" type="button">‹</button>
+                            <button id="project-modal-next" type="button">›</button>
+                        </div>
+                    </div>
+                    <div id="project-modal-thumbs" class="project-modal-thumbs"></div>
+                </div>
+                <div class="project-modal-content">
+                    <p id="project-modal-description"></p>
+                    <div id="project-modal-links" class="project-modal-links"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="closer" class="closer-close"></div>
     <script src="../src/assets/js/script.js"></script>

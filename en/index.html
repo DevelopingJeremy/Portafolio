@@ -147,6 +147,10 @@
                         <a target="_blank" class="github-project">
                             <i class="fa-brands fa-github"></i><span>Private</span>
                         </a>
+                        <button class="project-more" type="button" data-project-title="VOLCRC Costa Rican Red Cross"
+                            data-project-type="FullStack"
+                            data-project-description="Web application developed for the Costa Rican Red Cross, currently used internally by more than 5,000 volunteers nationwide. It is designed for volunteer registration and management, enabling information handling, monthly hours tracking, and efficient administration of participation across different branches throughout the country."
+                            data-project-images="../public/img/projects/VOLCRC.png">See more</button>
                     </div>
                     <footer class="icons-project">
                         <img src="../public/img/icons/REACT.png" alt="React">
@@ -173,6 +177,10 @@
                         <a target="_blank" class="github-project">
                             <i class="fa-brands fa-github"></i><span>Private</span>
                         </a>
+                        <button class="project-more" type="button" data-project-title="Order Management System"
+                            data-project-type="FullStack"
+                            data-project-description="Web application for managing orders on a digital platform, allowing order creation, real-time report generation, and email notifications, optimizing the control of thousands of orders per season and replacing manual processes."
+                            data-project-images="../public/img/projects/pedidos-DUSA.png">See more</button>
                     </div>
                     <footer class="icons-project">
                         <img src="../public/img/icons/REACT.png" alt="React">
@@ -219,6 +227,11 @@
                             <i class="fa-brands fa-github" style="color: rgba(224, 224, 224, 0.77);"></i>
                             <span>Github</span>
                         </a>
+
+                        <button class="project-more" type="button" data-project-title="Inventory Management"
+                            data-project-type="Fullstack"
+                            data-project-description="A lightweight yet powerful ERP solution tailored for small businesses, enabling efficient management of inventory, sales, clients, and suppliers from a single platform. Features include stock level tracking, sales reporting, supplier management, and customer database integration. Designed to optimize daily operations, reduce administrative workload, and provide real-time insights for smarter business decisions, all within a user-friendly and responsive interface."
+                            data-project-images="../public/img/projects/inventory-system-white.png,../public/img/projects/inventory-system-dark.png">See more</button>
 
                         <!-- Redirect to the proyect
                         <a class="link-project" href="https://jeremyqg.com" target="_blank">
@@ -270,6 +283,11 @@
                             <i class="fa-brands fa-github" style="color: rgba(224, 224, 224, 0.77);"></i>
                             <span>Private</span>
                         </a>
+
+                        <button class="project-more" type="button"
+                            data-project-title="Business Appointment Scheduling System" data-project-type="Fullstack"
+                            data-project-description="An intuitive online platform that streamlines the process of booking and managing in-person or virtual appointments. Features include an interactive calendar and automated email notifications, allowing businesses to optimize their scheduling workflow and enhance customer satisfaction. Designed with a clean and responsive interface for seamless use across desktop and mobile devices."
+                            data-project-images="../public/img/projects/Dusa.png">See more</button>
 
                         <!-- Redirect to the proyect
                         <a class="link-project" href="https://jeremyqg.com" target="_blank">
@@ -329,6 +347,11 @@
                             <span>Private</span>
                         </a>
 
+                        <button class="project-more" type="button" data-project-title="Dynamic School Page"
+                            data-project-type="Backend"
+                            data-project-description="A modern and fully responsive institutional landing page designed to dynamically display announcements, upcoming events, and academic programs. I led the backend team, organizing tasks and supervising the implementation of key features. Includes an integrated content management system (CMS) that allows administrators to easily update information, manage media content, and keep students, parents, and staff informed in real-time. Built with scalability and accessibility in mind, ensuring optimal performance across all devices."
+                            data-project-images="../public/img/projects/vok-especialidades.png,../public/img/projects/Vok-index.png">See more</button>
+
                         <!-- Redirect to the proyect
                         <a class="link-project" href="https://jeremyqg.com" target="_blank">
                             <i class="fa-solid fa-link" style="color: rgba(224, 224, 224, 0.77); font-size: 20px;"></i>
@@ -383,6 +406,11 @@
                         <a class="link-project" href="https://jeremyqg.com/acortador/" target="_blank">
                             <i class="fa-solid fa-link" style="color: rgba(224, 224, 224, 0.77); font-size: 20px;"></i>
                         </a>
+
+                        <button class="project-more" type="button" data-project-title="URL Shortener"
+                            data-project-type="Fullstack"
+                            data-project-description="A web application that converts long URLs into short, easy-to-share links for social media and messaging platforms. Features URL validation, unique code generation for each link, and real-time click tracking. Perfect for demonstrating Fullstack skills, API handling and database integration."
+                            data-project-images="../public/img/projects/url-shortenner.png,../public/img/projects/url-shortenner.png,../public/img/projects/url-shortenner.png">See more</button>
                     </div>
 
                     <!-- Techonlogies used in the project -->
@@ -500,6 +528,34 @@
             <h4>Made with ❤️ by Jeremy Q. · Full Stack Developer based in Costa Rica · Let's build something great
                 together.</h4>
         </footer>
+
+        <div id="project-modal" class="project-modal" aria-hidden="true">
+            <div class="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+                <div class="project-modal-header">
+                    <div class="project-modal-title">
+                        <span id="project-modal-type" class="type"></span>
+                        <h2 id="project-modal-title" class="project-modal-title-text"></h2>
+                    </div>
+                    <button id="project-modal-close" class="project-modal-close" type="button">×</button>
+                </div>
+                <div class="project-modal-body">
+                    <div class="project-modal-gallery">
+                        <div class="project-modal-main">
+                            <img id="project-modal-image" src="" alt="">
+                            <div class="project-modal-nav">
+                                <button id="project-modal-prev" type="button">‹</button>
+                                <button id="project-modal-next" type="button">›</button>
+                            </div>
+                        </div>
+                        <div id="project-modal-thumbs" class="project-modal-thumbs"></div>
+                    </div>
+                    <div class="project-modal-content">
+                        <p id="project-modal-description"></p>
+                        <div id="project-modal-links" class="project-modal-links"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
