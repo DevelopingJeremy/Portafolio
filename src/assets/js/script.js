@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalThumbs = document.getElementById('project-modal-thumbs');
     const modalPrev = document.getElementById('project-modal-prev');
     const modalNext = document.getElementById('project-modal-next');
+    const modalLinks = document.getElementById('project-modal-links');
 
     let modalImages = [];
     let modalActiveIndex = 0;
@@ -136,6 +137,17 @@ document.addEventListener('DOMContentLoaded', () => {
         modalType.textContent = data.type || '';
         modalDescription.textContent = data.description || '';
 
+        if (modalLinks) {
+            modalLinks.innerHTML = '';
+
+            if (data.linksContainer) {
+                data.linksContainer.querySelectorAll('a').forEach((a) => {
+                    const clone = a.cloneNode(true);
+                    modalLinks.appendChild(clone);
+                });
+            }
+        }
+
         modalImages = parseImages(data.images);
         if (!modalImages.length && data.fallbackImage) {
             modalImages = [data.fallbackImage];
@@ -163,12 +175,14 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.addEventListener('click', () => {
                 const card = btn.closest('.project-card');
                 const firstCardImg = card ? card.querySelector('img') : null;
+                const linksContainer = card ? card.querySelector('.links-tech') : null;
                 openProjectModal({
                     title: btn.getAttribute('data-project-title'),
                     type: btn.getAttribute('data-project-type'),
                     description: btn.getAttribute('data-project-description'),
                     images: btn.getAttribute('data-project-images'),
-                    fallbackImage: firstCardImg ? firstCardImg.getAttribute('src') : ''
+                    fallbackImage: firstCardImg ? firstCardImg.getAttribute('src') : '',
+                    linksContainer
                 });
             });
         });
