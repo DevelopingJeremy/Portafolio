@@ -29,14 +29,26 @@ document.addEventListener('DOMContentLoaded', () => {
     // Place images on the left or right depending on the child element
     const projects = document.getElementsByClassName('project-card');
 
-    Array.from(projects).forEach((card, index) => {
-        if (index % 2 == 1) {
-            if (window.innerWidth > 1000) card.style.flexDirection = 'row-reverse';
-            card.classList.add('from-left');
-        } else {
-            card.classList.add('from-right');
-        }
-    })
+    const applyProjectCardDirection = () => {
+        Array.from(projects).forEach((card, index) => {
+            if (index % 2 == 1) {
+                if (window.innerWidth > 1000) {
+                    card.style.flexDirection = 'row-reverse';
+                } else {
+                    card.style.flexDirection = '';
+                }
+
+                card.classList.add('from-left');
+            } else {
+                card.style.flexDirection = '';
+                card.classList.add('from-right');
+            }
+        });
+    };
+
+    applyProjectCardDirection();
+
+    window.addEventListener('resize', applyProjectCardDirection);
 
     const projectCards = document.querySelectorAll('.project-card');
 

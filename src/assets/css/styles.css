@@ -503,10 +503,32 @@ nav>div>ul>li>a {
 @media (max-width: 1000px) {
     .project-card {
         flex-direction: column;
+        width: 90%;
+        gap: 35px;
+        align-items: stretch;
+    }
+
+    .project-info {
+        width: 100%;
+    }
+
+    .double-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .double-img img {
+        max-width: 100%;
         height: 200px;
+        object-fit: contain;
+    }
+
+    .icons-project {
+        width: 100%;
+        min-width: 0;
+        flex-wrap: wrap;
+        height: auto;
     }
 
     .double-img img:nth-child(2) {
