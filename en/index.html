@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy Quesada | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../public/img/icons/favicon.ico">
+    <link rel="stylesheet" href="../src/assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/03f5a87914.js" crossorigin="anonymous"></script>
+
+    <!-- SEO Meta -->
+    <meta name="description"
+        content="Jeremy Quesada – Full Stack Developer from Costa Rica. Explore my professional projects, technologies, and web development skills.">
+    <meta name="keywords"
+        content="Jeremy Quesada, Full Stack Developer, Portfolio, Costa Rica, React, PHP, JavaScript, Node.js, MySQL, Web Developer">
+    <meta name="author" content="Jeremy Quesada Garro">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dev.jeremyqg.com/">
+
+    <!-- Hreflang for multiple languages -->
+    <link rel="alternate" href="https://dev.jeremyqg.com/es/" hreflang="es">
+    <link rel="alternate" href="https://dev.jeremyqg.com/us/" hreflang="en">
+
+    <!-- Open Graph (Social Media Preview) -->
+    <meta property="og:title" content="Jeremy Quesada | Portfolio">
+    <meta property="og:description"
+        content="Professional portfolio of Jeremy Quesada, Full Stack Developer from Costa Rica. Discover projects, tech stack, and web development experience.">
+    <meta property="og:image" content="https://dev.jeremyqg.com/public/img/logos/Logo Jeremy Quesada TRANSPARENTE.png">
+    <meta property="og:url" content="https://dev.jeremyqg.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jeremy Quesada | Portfolio">
+    <meta name="twitter:description"
+        content="Professional portfolio of Jeremy Quesada, Full Stack Developer from Costa Rica. Explore my projects and technologies.">
+    <meta name="twitter:image"
+        content="https://dev.jeremyqg.com/public/img/logos/Logo Jeremy Quesada OG FONDO BLANCO.png">
+
+</head>
+
+<body>
+    <div id='alert' class="alert-email alert-email-hidden"> Successful email copy </div>
+    <header id="header-responsive">
+
+        <h1 class="title-header">@DevelopingJeremy</h1>
+        <div class="header-right">
+            <div class="links">
+                <a href="https://www.linkedin.com/in/jeremy-andrey-quesada-garro-6a5710310" target="_blank">
+                    <i class="fa-brands fa-linkedin" style="color: #8f28ff;"></i>
+                </a>
+                <a href="https://github.com/DevelopingJeremy" target="_blank">
+                    <i class="fa-brands fa-github" style="color: #8f28ff;"></i>
+                </a>
+            </div>
+
+            <nav>
+                <i id="nav-responsive" class="fa-solid fa-bars" style="color: #8f28ff; cursor: pointer;"></i>
+                <div>
+                    <ul class="redirection-nav">
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#technologies">Technologies</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Selector de idioma -->
+            <div class="language-selector">
+                <button id="lang-button">ES ▼</button>
+                <ul id="lang-list" class="lang-list-close">
+                    <li data-lang="es">Español</li>
+                    <li data-lang="en">English</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú responsive -->
+    <div id="mobile-menu" class="header-close">
+        <ul>
+            <li><a href="#projects" class="redirect">Projects</a></li>
+            <li><a href="#technologies" class="redirect">Technologies</a></li>
+            <li><a href="#contact" class="redirect">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+
+        <!-- Inicio -->
+        <section class="index">
+            <img src="../public/img/Jeremy-en-microsoft.jpg" alt="Imagen de Jeremy en Microsoft">
+            <div class="figura-index">
+                <figure class="bola-index"></figure>
+                <figure class="line-index"></figure>
+            </div>
+
+            <article>
+                <h4>Hi, my name is</h4>
+
+                <h1>JEREMY QUESADA.</h1>
+
+                <p>Passionate <span>Full Stack Developer</span> focused on building smart and efficient tech solutions.
+                    I've been involved in private projects with institutions and companies, always aiming to create
+                    fast, functional, and well-crafted tools.</p>
+
+                <div class="buttons-index">
+                    <button class="button-cv"
+                        onclick="window.open('../public/docs/CV English Web Development Jeremy Quesada Garro.pdf', '_blank')">View
+                        CV</button>
+
+                    <button onclick="(window.location.href = '#contact')" class="button-contact">&lt;Contact
+                        /&gt;</button>
+                </div>
+            </article>
+        </section>
+
+        <!-- My projects -->
+        <section class="projects">
+            <a name="projects"></a>
+            <div class="section-title">
+                <h1>My Projects</h1>
+                <div class="line"></div>
+            </div>
+
+            <!-- VOLCRC Costa Rican Red Cross -->
+            <article class="project-card">
+                <div class="double-img">
+                    <img src="../public/img/projects/volcrc/inicio-volcrc.png" alt="VOLCRC Costa Rican Red Cross"
+                        title="VOLCRC Costa Rican Red Cross">
+                    <img src="../public/img/projects/volcrc/volcrc-celular.png" alt="VOLCRC Costa Rican Red Cross"
+                        title="VOLCRC Costa Rican Red Cross">
+                </div>
+                <div class="project-info">
+                    <header class="project-header">
+                        <span class="type">FullStack</span>
+                        <h3>VOLCRC Costa Rican Red Cross</h3>
+                        <p>Web application developed for the Costa Rican Red Cross, currently used internally by more
+                            than
+                            5,000 volunteers nationwide.
+                            It is designed for volunteer registration and management, enabling information handling,
+                            monthly hours tracking, and efficient administration of participation across different
+                            branches throughout the country.</p>
+                    </header>
+                    <div class="links-tech">
+                        <a target="_blank" class="github-project">
+                            <i class="fa-brands fa-github"></i><span>Private</span>
+                        </a>
+                        <button class="project-more" type="button" data-project-title="VOLCRC Costa Rican Red Cross"
+                            data-project-type="FullStack"
+                            data-project-description="Web application developed for the Costa Rican Red Cross, currently used internally by more than 5,000 volunteers nationwide. It is designed for volunteer registration and management, enabling information handling, monthly hours tracking, and efficient administration of participation across different branches throughout the country."
+                            data-project-images="../public/img/projects/volcrc/inicio-volcrc.png,../public/img/projects/volcrc/perfil-volcrc.png,../public/img/projects/volcrc/preaprobacion-volcrc.png,../public/img/projects/volcrc/carga-volcrc.png,../public/img/projects/volcrc/volcrc-celular.png">See more</button>
+                    </div>
+                    <footer class="icons-project">
+                        <img src="../public/img/icons/REACT.png" alt="React">
+                        <img src="../public/img/icons/MYSQL.png" alt="MySQL">
+                        <img src="../public/img/icons/NODEJS.webp" alt="Node.js">
+                    </footer>
+                </div>
+            </article>
+
+            <!-- DUSA Orders -->
+            <article class="project-card">
+                <div class="double-img">
+                    <img src="../public/img/projects/pedidos-dusa/pedidos-DUSA.png" alt="DUSA Orders" title="DUSA Orders">
+                    <img src="../public/img/projects/pedidos-dusa/pedidos-celular.png" alt="DUSA Orders" title="DUSA Orders">
+                </div>
+                <div class="project-info">
+                    <header class="project-header">
+                        <span class="type">FullStack</span>
+                        <h3>Order Management System</h3>
+                        <p>Web application for managing orders on a digital platform, allowing order creation,
+                            real-time report generation, and email notifications, optimizing the control of thousands
+                            of orders per season and replacing manual processes.</p>
+                    </header>
+                    <div class="links-tech">
+                        <a target="_blank" class="github-project">
+                            <i class="fa-brands fa-github"></i><span>Private</span>
+                        </a>
+                        <button class="project-more" type="button" data-project-title="Order Management System"
+                            data-project-type="FullStack"
+                            data-project-description="Web application for managing orders on a digital platform, allowing order creation, real-time report generation, and email notifications, optimizing the control of thousands of orders per season and replacing manual processes."
+                            data-project-images="../public/img/projects/pedidos-dusa/pedidos-DUSA.png,../public/img/projects/pedidos-dusa/nuevo-pedido.png,../public/img/projects/pedidos-dusa/pedido.png,../public/img/projects/pedidos-dusa/alistar-pedidos.png,../public/img/projects/pedidos-dusa/informes-pedidos.png,../public/img/projects/pedidos-dusa/tiquetes-pedidos.png,../public/img/projects/pedidos-dusa/pedidos-celular.png">See more</button>
+                    </div>
+                    <footer class="icons-project">
+                        <img src="../public/img/icons/REACT.png" alt="React">
+                        <img src="../public/img/icons/MYSQL.png" alt="MySQL">
+                        <img src="../public/img/icons/PHP.webp" alt="PHP">
+                        <img src="../public/img/icons/docker.png" alt="Docker">
+                    </footer>
+                </div>
+            </article>
+
+
+            <!-- Project Card -Image Left -->
+            <!--* Inventory -->
+            <article class="project-card">
+
+                <!-- Images -->
+                <div class="double-img">
+                    <img src="../public/img/projects/inventarios/inventory-system-dark.png" alt="Inventory System in dark mode"
+                        title="Inventory System in dark mode">
+                    <img src="../public/img/projects/inventarios/inventory-system-dark.png" alt="Inventory System in dark mode"
+                        title="Inventory System in dark mode">
+                </div>
+
+                <div class="project-info">
+
+                    <!-- Principal information -->
+                    <header class="project-header">
+                        <span class="type">Fullstack</span>
+                        <h3>Inventory Management</h3>
+                        <p>A lightweight yet powerful ERP solution tailored for small businesses, enabling efficient
+                            management of inventory, sales,
+                            clients, and suppliers from a single platform. Features include stock level tracking, sales
+                            reporting, supplier management,
+                            and customer database integration. Designed to optimize daily operations, reduce
+                            administrative workload, and provide
+                            real-time insights for smarter business decisions, all within a user-friendly and responsive
+                            interface.</p>
+                    </header>
+
+                    <div class="links-tech">
+                        <!-- Redirect to the Github -->
+                        <a href="https://github.com/DevelopingJeremy/Sistema-de-inventarios" class="github-project"
+                            target="_blank">
+                            <i class="fa-brands fa-github" style="color: rgba(224, 224, 224, 0.77);"></i>
+                            <span>Github</span>
+                        </a>
+
+                        <button class="project-more" type="button" data-project-title="Inventory Management"
+                            data-project-type="Fullstack"
+                            data-project-description="A lightweight yet powerful ERP solution tailored for small businesses, enabling efficient management of inventory, sales, clients, and suppliers from a single platform. Features include stock level tracking, sales reporting, supplier management, and customer database integration. Designed to optimize daily operations, reduce administrative workload, and provide real-time insights for smarter business decisions, all within a user-friendly and responsive interface."
+                            data-project-images="../public/img/projects/inventarios/inventory-system-dark.png,../public/img/projects/inventarios/inventory-system-white.png">See more</button>
+
+                        <!-- Redirect to the proyect
+                        <a class="link-project" href="https://jeremyqg.com" target="_blank">
+                            <i class="fa-solid fa-link" style="color: rgba(224, 224, 224, 0.77); font-size: 20px;"></i>
+                        </a> -->
+                    </div>
+
+                    <!-- Techonlogies used in the project -->
+                    <footer class="icons-project">
+                        <img src="../public/img/icons/HTML5.png" alt="Logotipo de HTML5">
+                        <img src="../public/img/icons/CSS3.png" alt="Logotipo de CSS3">
+                        <img src="../public/img/icons/JAVASCRIPT.png" alt="Logotipo de JAVASCRIPT">
+                        <img src="../public/img/icons/MYSQL.png" alt="Logotipo de MYSQL">
+                        <img src="../public/img/icons/PHP.webp" alt="Logotipo de PHP">
+                    </footer>
+                </div>
+            </article>
+
+            <!-- Project Card - Image Right -->
+            <!--* Calendar -->
+            <article class="project-card">
+                <!-- Images -->
+                <div class="double-img">
+                    <img src="../public/img/projects/citas-dusa/Dusa.png"
+                        alt="Business Appointment Scheduling System in white mode"
+                        title="Inventory System in dark mode">
+                    <img src="../public/img/projects/citas-dusa/dusa-celular.png"
+                        alt="Business Appointment Scheduling System in white mode"
+                        title="Inventory System in white mode">
+                </div>
+
+                <div class="project-info">
+
+                    <!-- Principal information -->
+                    <header class="project-header">
+                        <span class="type">Fullstack</span>
+                        <h3>Business Appointment Scheduling System</h3>
+                        <p>
+                            An intuitive online platform that streamlines the process of booking and managing in-person
+                            or virtual appointments.
+                            Features include an interactive calendar, automated email notifications,
+                            allowing businesses to optimize their scheduling workflow and enhance customer satisfaction.
+                            Designed with a clean
+                            and responsive interface for seamless use across desktop and mobile devices.
+                        </p>
+
+                    </header>
+
+                    <div class="links-tech">
+                        <!-- Redirect to the Github -->
+                        <a class="github-project">
+                            <i class="fa-brands fa-github" style="color: rgba(224, 224, 224, 0.77);"></i>
+                            <span>Private</span>
+                        </a>
+
+                        <button class="project-more" type="button"
+                            data-project-title="Business Appointment Scheduling System" data-project-type="Fullstack"
+                            data-project-description="An intuitive online platform that streamlines the process of booking and managing in-person or virtual appointments. Features include an interactive calendar and automated email notifications, allowing businesses to optimize their scheduling workflow and enhance customer satisfaction. Designed with a clean and responsive interface for seamless use across desktop and mobile devices."
+                            data-project-images="../public/img/projects/citas-dusa/Dusa.png,../public/img/projects/citas-dusa/colegios-dusa.png,../public/img/projects/citas-dusa/confirmacion-dusa.png,../public/img/projects/citas-dusa/dusa-celular.png">See more</button>
+
+                        <!-- Redirect to the proyect
+                        <a class="link-project" href="https://jeremyqg.com" target="_blank">
+                            <i class="fa-solid fa-link" style="color: rgba(224, 224, 224, 0.77); font-size: 20px;"></i>
+                        </a> -->
+                    </div>
+
+
+                    <!-- Techonlogies used in the project -->
+                    <footer class="icons-project">
+                        <img src="../public/img/icons/REACT.png" alt="Logotipo de REACT">
+                        <img src="../public/img/icons/CSS3.png" alt="Logotipo de CSS3">
+                        <img src="../public/img/icons/JAVASCRIPT.png" alt="Logotipo de JAVASCRIPT">
+                        <img src="../public/img/icons/MYSQL.png" alt="Logotipo de MYSQL">
+                        <img src="../public/img/icons/PHP.webp" alt="Logotipo de PHP">
+                        <img src="../public/img/icons/docker.png" alt="Logotipo de DOCKER">
+                    </footer>
+                </div>
+            </article>
+
+            <!-- Project Card -->
+            <!--* Institutional Landing Page -->
+            <article class="project-card">
+
+                <!-- Images -->
+                <div class="double-img">
+                    <img src="../public/img/projects/covomosa/main.png" alt="Dynamic School Page"
+                        title="Dynamic School Page">
+                    <img src="../public/img/projects/covomosa/covomosa-celular.png" alt="Dynamic School Page"
+                        title="Dynamic School Page">
+                </div>
+
+                <div class="project-info">
+
+                    <!-- Principal information -->
+                    <header class="project-header">
+                        <span class="type">Backend</span>
+                        <h3>Dynamic School Page</h3>
+                        <p>
+                            A modern and fully responsive institutional landing page designed to dynamically display
+                            announcements, upcoming events, and academic programs. I led the backend team,
+                            organizing tasks
+                            and supervising the implementation of key features. Includes an integrated content
+                            management system (CMS)
+                            that allows administrators to easily update information, manage media content, and keep
+                            students,
+                            parents, and staff informed in real-time. Built with scalability and accessibility in mind,
+                            ensuring optimal performance across all devices.
+                        </p>
+                    </header>
+
+
+                    <div href="https://github.com/DevelopingJeremy/Pagina-vok" target="_blank" class="links-tech">
+                        <!-- Redirect to the Github -->
+                        <a class="github-project">
+                            <i class="fa-brands fa-github" style="color: rgba(224, 224, 224, 0.77);"></i>
+                            <span>Private</span>
+                        </a>
+
+                        <button class="project-more" type="button" data-project-title="Dynamic School Page"
+                            data-project-type="Backend"
+                            data-project-description="A modern and fully responsive institutional landing page designed to dynamically display announcements, upcoming events, and academic programs. I led the backend team, organizing tasks and supervising the implementation of key features. Includes an integrated content management system (CMS) that allows administrators to easily update information, manage media content, and keep students, parents, and staff informed in real-time. Built with scalability and accessibility in mind, ensuring optimal performance across all devices."
+                            data-project-images="../public/img/projects/covomosa/main.png,../public/img/projects/covomosa/main2.png,../public/img/projects/covomosa/especialidades.png,../public/img/projects/covomosa/galeria-covomosa.png,../public/img/projects/covomosa/tour-virtual.png,../public/img/projects/covomosa/covomosa-celular.png">See more</button>
+
+                        <!-- Redirect to the proyect
+                        <a class="link-project" href="https://jeremyqg.com" target="_blank">
+                            <i class="fa-solid fa-link" style="color: rgba(224, 224, 224, 0.77); font-size: 20px;"></i>
+                        </a> -->
+                    </div>
+
+                    <!-- Techonlogies used in the project -->
+                    <footer class="icons-project">
+                        <img src="../public/img/icons/HTML5.png" alt="Logotipo de HTML5">
+                        <img src="../public/img/icons/CSS3.png" alt="Logotipo de CSS3">
+                        <img src="../public/img/icons/JAVASCRIPT.png" alt="Logotipo de JAVASCRIPT">
+                        <img src="../public/img/icons/MYSQL.png" alt="Logotipo de MYSQL">
+                        <img src="../public/img/icons/PHP.webp" alt="Logotipo de PHP">
+                    </footer>
+                </div>
+            </article>
+
+            <!-- Project Card -->
+            <!--* Institutional Landing Page -->
+            <article class="project-card">
+
+                <!-- Images -->
+                <div class="double-img">
+                    <img src="../public/img/projects/acortador/url-shortenner.png" alt="URL Shortener"
+                        title="URL Shortener">
+                    <img src="../public/img/projects/acortador/acortador-celular.png" alt="URL Shortener"
+                        title="URL Shortener">
+                </div>
+
+                <div class="project-info">
+
+                    <!-- Principal information -->
+                    <header class="project-header">
+                        <span class="type">Fullstack</span>
+                        <h3>URL Shortener</h3>
+                        <p>
+                            A web application that converts long URLs into short, easy-to-share links for social media
+                            and messaging platforms.
+                            Features URL validation, unique code generation for each link, and real-time click tracking.
+                            Perfect for demonstrating Fullstack skills, API handling and database integration.
+                        </p>
+                    </header>
+
+
+                    <div class="links-tech">
+                        <!-- Redirect to the Github -->
+                        <a href="https://github.com/DevelopingJeremy/acortador-url" target="_blank"
+                            class="github-project">
+                            <i class="fa-brands fa-github" style="color: rgba(224, 224, 224, 0.77);"></i>
+                            <span>Github</span>
+                        </a>
+
+                        <!-- Redirect to the proyect -->
+                        <a class="link-project" href="https://jeremyqg.com/acortador/" target="_blank">
+                            <i class="fa-solid fa-link" style="color: rgba(224, 224, 224, 0.77); font-size: 20px;"></i>
+                        </a>
+
+                        <button class="project-more" type="button" data-project-title="URL Shortener"
+                            data-project-type="Fullstack"
+                            data-project-description="A web application that converts long URLs into short, easy-to-share links for social media and messaging platforms. Features URL validation, unique code generation for each link, and real-time click tracking. Perfect for demonstrating Fullstack skills, API handling and database integration."
+                            data-project-images="../public/img/projects/acortador/url-shortenner.png,../public/img/projects/acortador/acortado.png,../public/img/projects/acortador/acortador-celular.png">See more</button>
+                    </div>
+
+                    <!-- Techonlogies used in the project -->
+                    <footer class="icons-project">
+                        <img src="../public/img/icons/HTML5.png" alt="Logotipo de HTML5">
+                        <img src="../public/img/icons/CSS3.png" alt="Logotipo de CSS3">
+                        <img src="../public/img/icons/JAVASCRIPT.png" alt="Logotipo de JAVASCRIPT">
+                        <img src="../public/img/icons/MYSQL.png" alt="Logotipo de MYSQL">
+                        <img src="../public/img/icons/PHP.webp" alt="Logotipo de PHP">
+                    </footer>
+                </div>
+            </article>
+        </section>
+
+        <section class="technologies">
+
+            <a name="technologies"></a>
+            <div class="section-title">
+                <h1>Technologies</h1>
+                <div class="line"></div>
+            </div>
+
+            <p class="text-technologies">On my journey as a <span style="color: #00FFAE;">web developer</span>, I’ve
+                <span style="color: #FF9500;">built experience</span> and skills in a variety of technologies. <span
+                    style="color: #00BBFF;">My tech stack includes:</span>
+            </p>
+
+            <div class="stacks-full">
+                <!-- FrontEnd -->
+                <article class="stack">
+                    <h1>Frontend</h1>
+                    <div class="icons">
+                        <img src="../public/img/icons/HTML5.png" alt="Icon HTML 5">
+                        <img src="../public/img/icons/CSS3.png" alt="Icon CSS 3">
+                        <img src="../public/img/icons/JAVASCRIPT.png" alt="Icon JAVASCRIPT">
+                        <img src="../public/img/icons/REACT.png" alt="Icon REACT">
+                    </div>
+                </article>
+
+                <article class="stack">
+                    <h1>Backend</h1>
+                    <div class="icons">
+                        <img src="../public/img/icons/PHP.webp" alt="Icon PHP">
+                        <img src="../public/img/icons/MYSQL.png" alt="Icon MYSQL">
+                        <img src="../public/img/icons/NODEJS.webp" alt="Icon NODEJS">
+                        <img src="../public/img/icons/EXPRESS.png" alt="Express">
+                        <img src="../public/img/icons/NODEJS.webp" alt="Icon NODEJS">
+                        <img src="../public/img/icons/EXPRESS.png" alt="Express">
+                    </div>
+                </article>
+
+                <article class="stack">
+                    <h1>Learning</h1>
+                    <div class="icons">
+                        <img src="../public/img/icons/MONGODB.webp" alt="Icon MONGODB">
+                        <img src="../public/img/icons/FIGMA.png" alt="Icon FIGMA">
+                    </div>
+                </article>
+
+                <article class="stack">
+                    <h1>Tools</h1>
+                    <div class="icons">
+                        <img src="../public/img/icons/GIT.png" alt="Icon GIT">
+                        <img src="../public/img/icons/GITHUB-WHITE.png" alt="Icon GITHUB">
+                        <img src="../public/img/icons/VSCODE.png" alt="Icon VSCODE">
+                        <img src="../public/img/icons/NOTION.png" alt="Icon NOTION">
+                        <img src="../public/img/icons/docker.png" alt="Icon DOCKER">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact">
+            <a name="contact"></a>
+            <div class="section-title">
+                <h1>Contact Me</h1>
+                <div class="line"></div>
+            </div>
+
+            <div class="contact-items">
+                <img src="../public/img/logos/Logo Jeremy Quesada TRANSPARENTE.png"
+                    alt="Jeremy Quesada White logo with transparent">
+
+                <article class="contact-links">
+                    <!-- Location -->
+                    <span><i class="fa-solid fa-location-dot" style="color: #8f28ff; margin-right: 10px;"></i> Costa
+                        Rica, San José </span>
+
+                    <!-- Email -->
+                    <span id="email">
+                        <i class="fa-solid fa-envelope"
+                            style="color: #8f28ff; margin-right: 10px;"></i>info@jeremyqg.com <a
+                            href="mailto:info@jeremyqg.com">
+                            <i class="fa-solid fa-paper-plane" style="color: #8f28ff; margin: 0 10px;"></i></a>
+                        <i class="fa-solid fa-clone" style="color: #8f28ff;cursor: pointer;" id="button-copy"></i>
+                    </span>
+
+
+                    <!-- Redirection Links -->
+                    <div class="links links-contact">
+                        <a href="https://www.linkedin.com/in/jeremy-andrey-quesada-garro-6a5710310" target="_blank">
+                            <i class="fa-brands fa-linkedin" style="color: #8f28ff;"></i>
+                        </a>
+                        <a href="https://github.com/DevelopingJeremy" target="_blank">
+                            <i class="fa-brands fa-github" style="color: #8f28ff;"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="radius-gradient"></div>
+        </section>
+
+        <footer class="footer">
+            <h4>Made with ❤️ by Jeremy Q. · Full Stack Developer based in Costa Rica · Let's build something great
+                together.</h4>
+        </footer>
+
+        <div id="project-modal" class="project-modal" aria-hidden="true">
+            <div class="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+                <div class="project-modal-header">
+                    <div class="project-modal-title">
+                        <span id="project-modal-type" class="type"></span>
+                        <h2 id="project-modal-title" class="project-modal-title-text"></h2>
+                    </div>
+                    <button id="project-modal-close" class="project-modal-close" type="button">×</button>
+                </div>
+                <div class="project-modal-body">
+                    <div class="project-modal-gallery">
+                        <div class="project-modal-main">
+                            <img id="project-modal-image" src="" alt="">
+                            <div class="project-modal-nav">
+                                <button id="project-modal-prev" type="button">‹</button>
+                                <button id="project-modal-next" type="button">›</button>
+                            </div>
+                        </div>
+                        <div id="project-modal-thumbs" class="project-modal-thumbs"></div>
+                    </div>
+                    <div class="project-modal-content">
+                        <p id="project-modal-description"></p>
+                        <div id="project-modal-links" class="project-modal-links"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="closer" class="closer-close"></div>
+
+    <script src="../src/assets/js/script.js"></script>
+</body>
+
+</html>
