@@ -9,6 +9,7 @@ Jeremy Quesada
 Email: info@jeremyqg.com 
 LinkedIn: https://www.linkedin.com/in/jeremy-andrey-quesada-garro-6a5710310  
 GitHub: https://github.com/DevelopingJeremy
+Empresa (Intexa): https://intexacr.com/
 
 ---
 
