@@ -15,7 +15,7 @@
     <meta name="robots" content="index, follow">
 
     <!-- Hreflang y canonical -->
-    <link rel="alternate" href="https://dev.jeremyqg.com/en/" hreflang="en" />
+    <link rel="alternate" href="https://dev.jeremyqg.com/us/" hreflang="en" />
     <link rel="alternate" href="https://dev.jeremyqg.com/es/" hreflang="es" />
     <link rel="canonical" href="https://dev.jeremyqg.com/">
 
@@ -59,13 +59,15 @@
     <h1>Redirecting to your language...</h1>
 
     <script>
-        // Función para detectar idioma y redirigir
+        // Detectar idioma del navegador y redirigir
         (function () {
-            const lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-            let targetURL = 'https://dev.jeremyqg.com/en/';
-
-            if (lang.startsWith('es')) targetURL = 'https://dev.jeremyqg.com/es/';
-            window.location.href = targetURL;
+            const lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    
+            const targetURL = lang.startsWith('es')
+                ? 'https://dev.jeremyqg.com/es/'
+                : 'https://dev.jeremyqg.com/en/';
+    
+            window.location.replace(targetURL);
         })();
     </script>
 </body>
